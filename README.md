@@ -37,7 +37,7 @@ Various stages of machine learning model building process are bundled together t
 3. Model Evaluation and Quality Metrics
 4. Trained Model Storage and Portability
 
-More details on all of these stages are available in [Volume 3](./1-gentle-introductory-series/volume-3-analytics-model-building-deployment.ipynb).
+More details on all these stages are available in [Volume 3](./1-gentle-introductory-series/volume-3-analytics-model-building-deployment.ipynb).
 
 ### Currently, helper function classes are provided for
 1. [Linear Regression](./2-helper-function-classes/LinearRegression)
