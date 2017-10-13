@@ -5,7 +5,7 @@ Additionally, helper functions and classes have been provided to aid frequently 
 
 # [1-gentle-introduction-series](./1-gentle-introductory-series)
 
-Volume 1, 2 and 3 in PyDAAL Gentle Introduction Series are available as Jupyter Notebooks. These volumes are designed to provide a quick introduction to essential features of PyDAAL.
+Volume 1, 2 and 3 in PyDAAL Gentle Introduction Series are available as [Jupyter Notebooks](http://jupyter.org/). These volumes are designed to provide a quick introduction to essential features of PyDAAL.
 These Jupyter Notebooks offer a collection of code examples that can be executed in the interactive command shell, and helper functions to automate common PyDAAL functionalities.
 
 ## How to use?
@@ -60,7 +60,7 @@ Import the [customUtils](./3-custom-modules/customUtils) module and explore basi
 
 # [4-interactive-tutorials](./4-interactive-tutorials)
 
-These tutorials are spread across a collection of [Jupyter notebooks](http://jupyter.org/) comprising a theoritical explanation on algorithms and interactive command shell to execute using PyDDAL API.  
+These tutorials are spread across a collection of Jupyter notebooks comprising a theoritical explanation on algorithms and interactive command shell to execute using PyDDAL API.  
 
 ### Tutorials Notebooks
 
