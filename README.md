@@ -3,7 +3,7 @@ This repository consists of various materials introducing PyDAAL (Python API of 
 
 Additionally, helper functions and classes have been provided to aid frequently performed PyDAAL operations.
 
-# [1-gentle-introduction-series](./1-gentle-introductory-series)
+# [1-gentle-introductory-series](./1-gentle-introductory-series)
 
 Volume 1, 2 and 3 in PyDAAL Gentle Introduction Series are available as [Jupyter Notebooks](http://jupyter.org/). These volumes are designed to provide a quick introduction to essential features of PyDAAL.
 These Jupyter Notebooks offer a collection of code examples that can be executed in the interactive command shell, and helper functions to automate common PyDAAL functionalities.
