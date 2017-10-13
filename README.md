@@ -17,9 +17,8 @@ Install [Intel Distribution for Python](https://software.intel.com/en-us/intel-d
 
 2. From the shell prompt (on Windows, use **Anaconda Prompt**), execute these  commands:
 
-```bash
-    conda config --add channels intel     
-    conda create --name idp intelpython3_full python=3     
+```bash    
+    conda create --name idp intelpython3_full python=3 -c intel    
     source activate idp (on Linux and OS X)      
     activate idp (on Windows)    
 ```
