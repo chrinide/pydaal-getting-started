@@ -7,14 +7,14 @@ Generic methods handled in each class are:
 3. Quality Metrics: evaluates model quality based on the type of model
 4. Model Storage and Portability: enables model storage and retrieval with serialization and compression
 
-### What are the files in this folder?
+## What are the files in this folder?
 Each folder in 2-pre-built-helper-class contains:
 1. A pre-built helper class. 
 2. Related usage example(s) for practical purpose implementing all methods of the pre-built helper class. 
 3. Documentation on methods, parameters and possible arguments.
 
 
-###  How do I use this class?
+##  How do I use this class?
 Download 2-pre-built-helper-class/\<*algorithms*> in your working directory. Import the respective class and start building your models<br>
 
 *For example:* To build a linear regression model 
@@ -44,6 +44,6 @@ lr.printAllQualityMetrics(singleBeta,groupBeta)
 ```
 
 For practice, Run the examples from 2-pre-built-helper-class/\<*algorithm*>/\<*usage example*>.
-### Do the usage examples cover all possibilities of using these methods?
+## Do the usage examples cover all possibilities of using these methods?
 
 No. These examples may not cover all possible approaches, kindly refer to the documentation provided in 2-pre-built-helper-class/\<*algorithm*>/\<*documentation*> or the comment section above each method in the class file.
