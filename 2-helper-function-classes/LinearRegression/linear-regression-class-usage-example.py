@@ -21,7 +21,7 @@ trainingResult = lr.training(trainData,trainDependentVariables)
 pred_array = lr.predict(trainingResult,trainData)
 #Serialize
 lr.serialize(trainingResult, fileName = 'trainingResult.npy')
-#Deserailze
+#Deseriailze
 de_trainingResult = lr.deserialize(fileName = "trainingResult.npy")
 #Predict with Metrics
 predRes, predResRed, singleBeta, groupBeta = lr.predictWithQualityMetrics(trainingResult, trainData, trainDependentVariables, reducedBetaIndex=[2,10])

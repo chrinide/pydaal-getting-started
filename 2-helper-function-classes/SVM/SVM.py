@@ -12,9 +12,34 @@ class BinarySVM:
 
     '''
     Constructor to set SVM training parameters
+	parameters:
+
+	
     '''
     def __init__(self, method="boser", C = 1, tolerence = 0.001, tau = 0.000001, maxIterations = 1000000, cacheSize = 8000000, doShrinking = True, kernel = 'linear',
                  sigma = 0,k = 1, b = 0,dtype = float64):
+		'''
+		method: 'boser', default: 'boser'
+			computation method
+		C: deafult: 1
+			Upper bound in conditions of the quadratic optimization problem.
+		tolerance: default: '0.001'
+			Training accuracy/ stopping criteria
+		tau: default: 0.000001
+			Tau parameter of the WSS scheme.
+		maxiterations: default: 1000000
+			Maximal number of iterations for the algorithm.
+		cacheSize: default: 8000000
+			cachesize for storing values of kernal matrix.
+		doShringing: True/false, default: True
+			flag to set shrinking optimization techinique
+		kernel: 'linear'/'rbf', default: 'linear
+		k: default: 1
+			coefficient value of k when kernal function is 'linear'
+		b: 	default: 0
+			coeffiecent value of b of linear function
+		dtype: intc, float32, float63, intc	
+		'''	
         self.method = method
         # Print error message here"
         self.dtype = dtype
@@ -39,11 +64,7 @@ class BinarySVM:
         #Set algorithms parameters
         if self.method == 'boser':
             from  daal.algorithms.svm.training import boser
-            algorithm = training.Batch (method=boser, fptype=self.dtype)
-        '''
-        kernel_function.rbf.Batch (method=kernel_function.rbf.fastCSR)
-        kernel_function.linear.Batch ()
-        '''
+            algorithm = training.Batch (method=boser, fptype=self.dtype)   
         if self.kernel == 'linear':
             algorithm.parameter.kernel = kernel_function.linear.Batch (method=boser, fptype=self.dtype)
             algorithm.parameter.k = self.k
@@ -67,7 +88,7 @@ class BinarySVM:
     Arguments: training result object, test data feature values(type nT)
     Returns predicted values of type nT
     '''
-    def predict(self, trainingResult, testData): #give other parameters
+    def predict(self, trainingResult, testData): 
 
         if self.method == 'boser':
             from  daal.algorithms.svm.training import boser
@@ -237,6 +258,29 @@ class MultiSVM:
     '''
     def __init__(self, nClasses, method="boser", C = 1, tolerence = 0.001, tau = 0.000001, maxIterations = 1000000, cacheSize = 8000000, doShrinking = True, kernel = 'linear',
                  sigma = 0,k=1, b=0,dtype=float64):
+		'''
+		nClasses: number of classes
+		method: 'boser', default: 'boser'
+			computation method
+		C: deafult: 1
+			Upper bound in conditions of the quadratic optimization problem.
+		tolerance: default: '0.001'
+			Training accuracy/ stopping criteria
+		tau: default: 0.000001
+			Tau parameter of the WSS scheme.
+		maxiterations: default: 1000000
+			Maximal number of iterations for the algorithm.
+		cacheSize: default: 8000000
+			cachesize for storing values of kernal matrix.
+		doShringing: True/false, default: True
+			flag to set shrinking optimization techinique
+		kernel: 'linear'/'rbf', default: 'linear
+		k: default: 1
+			coefficient value of k when kernal function is 'linear'
+		b: 	default: 0
+			coeffiecent value of b of linear function
+		dtype: intc, float32, float63, intc	
+		'''	
         self.method = method
         # Print error message here"
         self.dtype = dtype
@@ -264,10 +308,7 @@ class MultiSVM:
             from  daal.algorithms.svm.training import boser
             trainingBatch = training.Batch (method=boser, fptype=self.dtype)
             predictionBatch = prediction.Batch()
-        '''
-        kernel_function.rbf.Batch (method=kernel_function.rbf.fastCSR)
-        kernel_function.linear.Batch ()
-        '''
+     
         if self.kernel == 'linear':
             trainingBatch.parameter.kernel = kernel_function.linear.Batch (method=boser, fptype=self.dtype)
             trainingBatch.parameter.k = self.k

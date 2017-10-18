@@ -16,6 +16,13 @@ import warnings
 class LinearRegression:
     '''
     Constructor to set Linear Regression training parameters
+	parameters: 
+	method: 'normeq'/'qr', default: 'normeq'
+			used to decide the calculation method. 'normeq' is normal equation,  'qr' is QR decomposition
+			
+	interceptFlag: True/False, default:	'True'
+			decides whether or not intercept component to be evaluated
+	dtype: intc/float32, float64, default: float64		
     '''
     def __init__(self, method = 'normEq', interceptFlag = True, dtype = float64):
         self.method = method
