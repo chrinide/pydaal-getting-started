@@ -38,8 +38,7 @@ lr.serialize(trainingResults, fileName = "storeTrainingResults.npy")
 #Deserialize
 retrieveTrainingResults = lr.deserialize(fileName = "storeTrainingResults.npy")
 #Predict with Metrics
-predRes, predResRed, singleBeta, groupBeta = lr.predictWithQualityMetrics(trainingResult, trainData, 
-												trainDependentVariables, reducedBetaIndex=[2,10])
+predRes, predResRed, singleBeta, groupBeta = lr.predictWithQualityMetrics(trainingResult, trainData,trainDependentVariables,reducedBetaIndex=[2,10])
 #Print Metrics results
 lr.printAllQualityMetrics(singleBeta,groupBeta)
 ```
