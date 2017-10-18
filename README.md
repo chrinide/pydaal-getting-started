@@ -27,7 +27,7 @@ IDP environment is installed with necessary packages and activated to run these 
   
 More detailed instructions can be found from [this online article](https://software.intel.com/en-us/articles/using-intel-distribution-for-python-with-anaconda).
 
-# [2-helper-function-classes](./2-helper-function-classes)
+# [2-pre-built-helper-classes](./2-pre-built-helper-classes)
 
 Various stages of machine learning model building process are bundled together to constitute one helper function class. These classes are constructed using PyDAAL’s data management and algorithm libraries to achieve a complete model deployment. 
 
