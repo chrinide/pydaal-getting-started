@@ -1,5 +1,5 @@
 
-Pre-built helper classes constructed using PyDAAL and usage example(s) are provided in each folder.<br>
+Pre-built helper classes are constructed using PyDAAL and usage example(s) are provided in each folder.<br>
 
 Generic methods handled in each class are:
 1. Training: fits the data to create a model
